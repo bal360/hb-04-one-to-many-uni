@@ -76,7 +76,7 @@ public class Course {
 		this.reviews = reviews;
 	}
 	
-	public void add(Review review) {
+	public void addReview(Review review) {
 		if (reviews == null) {
 			reviews = new ArrayList<>();
 		}
