@@ -32,11 +32,12 @@ public class GetCourseAndReviewsDemo {
 			int id = 10;
 			
 			
-			// get course AND associated reviews
+			// get and print course
 			Course course = session.get(Course.class,  id);
 			
 			System.out.println("Course: " + course.getTitle());
 			
+			// get and print reviews with Lazy Fetch
 //			System.out.println("Course Reviews: " + course.getReviews());
 			for (Review review : course.getReviews()) {
 				System.out.println("Review: " + review.getComment());
